@@ -13,12 +13,12 @@ const firstActionBtn = document.querySelector('.action-btn');
 
 // 1. Starting from activeNavItem, get its parent element (the <ul>)
 // Your code here:
-
+const ul = parent.activeNavItem('ul');
 
 // 2. From the activeNavItem, navigate up to find the <nav> element
 // Hint: Use parentElement twice, or use closest()
 // Your code here:
-
+const activeNavItem = 
 
 // 3. From firstActionBtn, find the closest .card ancestor
 // Your code here:

@@ -5,12 +5,24 @@
 
 // 1. When "Change Text" is clicked, change #text-target's text to "The text has been changed!"
 // Your code here:
+const changeBtn = document.getElementById('change-text-btn');
+changeBtn.addEventListener('click', changeTxt)
 
+
+function changeTxt() {
+ document.getElementById('text-target').textContent='The text has been changed!';
+}
+
+   
 
 // 2. When "Clear Text" is clicked, clear all text from #text-target
 // Your code here:
+const cleartxtBtn = document.getElementById("clear-text-btn");
+changeBtn.addEventListener('click', cleartxt)
 
-
+function cleartxt() {
+    document.getElementById('text-target').textContent='Clear Text';
+}
 
 // ===== Part 2: Understanding Differences =====
 
@@ -18,8 +30,21 @@
 // of #mixed-content in #comparison-output
 // Format it nicely so the differences are clear
 // Your code here:
+const compareBtn = document.getElementById('compare-btn');
+compareBtn.addEventListener('click', compare)
 
-
+function compare(){
+    const content = document.getElementById('mixed-content');
+    const output = document.getElementById('comparison-output');
+        output.innerHTML =`
+            <h4>textContent;</h4>
+            <div>${content.textContent}</div>
+            <h4>innerText;</h4>
+            <pre>${content.innerText}</pre>
+            <h4>innerHTML:</h4>
+            <pre>${content.innerHTML}</pre>
+            `;
+}
 
 // ===== Part 3: Counter =====
 
@@ -29,7 +54,12 @@
 // - Clicking Reset should set it back to 0
 // Display the count in #counter-display
 // Your code here:
-
+// const countElement = document.getElementById('count');
+// let count = 0;
+// function increment() {count ++; countElement.textContent = count;
+//     function decrement() {count --; countElement.textContent = count;}
+//     console.log(textContent)
+// }
 
 
 // ===== Part 4: innerHTML =====
@@ -104,4 +134,3 @@ const quotes = [
 
 // 13. Create a function that sanitizes HTML input (removes script tags, etc.)
 // Your code here:
-

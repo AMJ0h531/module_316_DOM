@@ -12,28 +12,37 @@ function displayResult(label, value) {
 
 // 1. Use a for loop to log all product names to the console
 // Your code here:
-
+const products = document.querySelectorAll('.product');
+console.log('1.', products[i].querySelector('h3').textContent);
 
 // 2. Use a for...of loop to add the class "processed" to each product
 // Your code here:
-
+for (const product of products) {product.classList.add('processed');
+}
+console.log('2. Added "processed" class to all products');
 
 // 3. Use forEach to log each task's text content
 // Your code here:
-
+const tasks = document.querySelectorAll('.task');
+tasks.forEach(task => {
+    console.log('3.', task.textContent);
+});
 
 
 // ===== Part 2: forEach with Index =====
 
 // 4. Use forEach to number each nav link (add "1. ", "2. ", etc. before the text)
 // Your code here:
-
+const navlinks = document.querySelectorAll('.nav-link');
+navlinks.forEach(link, index) => {
+    link.textContent = `${index + 1}. ${link.textContent}`;
+}
 
 // 5. Add a data-index attribute to each task showing its position
 // Your code here:
+tasks.forEach((task, index) =>) { }
 
-
-
+ 
 // ===== Part 3: Converting and Using Array Methods =====
 
 // 6. Get all products, convert to array, and use map() to get an array of prices
