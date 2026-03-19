@@ -2,6 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>316SBA_Document</title>
+</head>
+<body>
+
+<header>
+    <h1 id="main-title">Hello SBA Team</h1>
+    <p id="intro">This is my introduction paragraph.</p>
+</header>
+
+<div class="container" id="myTest">
+    <p class="text">Task list</p>
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+</div>
+
+<h3>SBA Structure</h3>
+<button id="submit-btn">Submit</button>
+
+<ul id="list"></ul>
+
+<div id="parent">
+    <p class="child">First Child</p>
+    <p class="child">Second Child</p>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>316SBA_Document</title>
+</head>
+<body>
+
+<header>
+    <h1 id="main-title">Hello SBA Team</h1>
+    <p id="intro">This is my introduction paragraph.</p>
+</header>
+
+<div class="container" id="myTest">
+    <p class="text">Task list</p>
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+</div>
+
+<h3>SBA Structure</h3>
+<button id="submit-btn">Submit</button>
+
+<ul id="list"></ul>
+
+<script>
+// 1. Iterating over DOM collection
+const items = document.getElementsByClassName('item');
+for (let i = 0; i < items.length; i++) {
+    console.log(items[i].textContent); 
+}
+
+// 2. Dynamically creating and styling a card
+const card = document.createElement('div');
+card.textContent = 'This is a card';
+card.innerHTML = '<h3>Title</h3><p>Description</p>';
+card.id = 'main-card';
+card.setAttribute('data-id', '123');
+card.style.backgroundColor = 'purple';
+card.style.padding = '20px';
+card.style.margin = '15px';
+document.body.appendChild(card);  // Append the card to the body
+
+// 3. Appending a new div to the parent element
+const parent = document.getElementById('parent');
+const newDiv = document.createElement('div');
+newDiv.textContent = 'This is a new div added to the parent.';
+parent.appendChild(newDiv);
+
+// 4. Using DocumentFragment to add 100 items to the list
+const mylist = document.getElementById('list');
+const fragment = document.createDocumentFragment();
+for (let i = 0; i < 100; i++) {
+    const li = document.createElement('li');
+    li.textContent = `Item ${i}`;
+    fragment.appendChild(li);
+}
+mylist.appendChild(fragment);  // Append the fragment to the list
+
+// 5. Parent-Child-Sibling traversal and modifying styles dynamically
+const button = document.getElementById("submit-btn");
+const container = document.getElementById("myTest");
+
+button.addEventListener("click", () => {
+    const firstChild = container.firstElementChild;
+    firstChild.style.backgroundColor = 'yellow';  // Change the background color of first child
+    
+    const secondChild = firstChild.nextElementSibling;
+    if (secondChild) {
+        secondChild.style.fontWeight = 'bold';  // Make second child bold
+    }
+    
+    const parentElement = firstChild.parentElement;
+    parentElement.style.border = '3px solid blue';  // Add border to the parent
+});
+</script>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>316SBA_Document</title>
+</head>
+<body>
+
+<header>
+    <h1 id="main-title">Hello SBA Team</h1>
+    <p id="intro">This is my introduction paragraph.</p>
+</header>
+
+<div class="container" id="myTest">
+    <p class="text">Task list</p>
+    <p class="text">First paragraph</p>
+    <p class="text">Second paragraph</p>
+</div>
+
+<h3>SBA Structure</h3>
+<button id="submit-btn">Submit</button>
+
+<ul id="list"></ul>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>316SBA_Document</title>
 </head>
@@ -33,7 +182,7 @@
     </div>
 <div id ="parent">
     <p2 id="child2">Second Child</p2>
-</div>
+</div> -->
 
 <!-- <div class="container">
     <p class="text">Second paragraph</p>
@@ -58,7 +207,7 @@ for (let i = 0; i < items.length; i++) {
 
 <script src="index.js"></script>
     
-</body>
+</body> -->
 
 
 
