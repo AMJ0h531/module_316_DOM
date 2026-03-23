@@ -1,1 +1,0 @@
-<script src="https://gist.github.com/AMJ0h531/a905c52f0eaa9c8add58c5a4a4645f2f.js"></script>
